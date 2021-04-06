@@ -49,15 +49,14 @@ $type = $data['data']['type'];
 $result1 = $data['result'];
 
   if ($result1 == true) {
-        send_message($chat_id,$message_id, "***
-        ✅ Valid BIN
-        Bin: $bin
-        Brand: $brand
-        Level : $level
-        Bank: $bank
-        Country: $country
-        Type:$type
-        Checked By @$username ***");
+        send_message($chat_id,$message_id, "***✅ Valid BIN
+Bin: $bin
+Brand: $brand
+Level: $level
+Bank: $bank
+Country: $country
+Type:$type
+Checked By @$username ***");
     }
 else {
     send_message($chat_id,$message_id, "***Enter Valid BIN***");
