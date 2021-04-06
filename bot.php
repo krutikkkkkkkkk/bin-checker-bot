@@ -48,7 +48,7 @@ $country = $data['data']['country'];
 $brand = $data['data']['vendor'];
 $level = $data['data']['level'];
 $type = $data['data']['type'];
-$result = $data['result']
+$result = $data['result'];
   if ($result == true) {
     send_message($chat_id, "***
 ✅ Valid BIN
