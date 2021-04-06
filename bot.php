@@ -13,7 +13,7 @@
     $start_msg = $_ENV['START_MSG'];
     //Start message
     if($message == "/start"){
-        send_message($chat_id, "Hey $firstname  \nUse ```!bin xxxxxx``` To check Bins  \n $start_msg");
+        send_message($chat_id,$message_id, "Hey $firstname  \nUse ```!bin xxxxxx``` To check Bins  \n $start_msg");
     }
 
 
