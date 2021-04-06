@@ -13,7 +13,7 @@
     $start_msg = $_ENV['START_MSG'];
     //Start message
     if($message == "/start"){
-        send_message($chat_id,$message_id, "Hey $firstname  \nUse !bin xxxxxx To check Bins  \n $start_msg");
+        send_message($chat_id,$message_id, "Hey $firstname  \nUse ```!bin xxxxxx``` To check Bins  \n $start_msg");
     }
 
 
@@ -50,7 +50,7 @@ $level = $data['data']['level'];
 $type = $data['data']['type'];
 $result = $data['result'];
   if ($result == true) {
-    send_message($chat_id, "***
+    send_message($chat_id,$message_id, "***
 ✅ Valid BIN
 Bin: $bin
 Brand: $brand
@@ -61,7 +61,7 @@ Type:$type
 Checked By @$username ***");
     }
 else {
-    send_message($chat_id, "***Enter Valid BIN***");
+    send_message($chat_id,$message_id, "***Enter Valid BIN***");
 }
    }
     
