@@ -23,4 +23,4 @@ API Token - Get Api Token from [@botfather](https://telegram.me/botfather)
 
 ### Reboot13
 
-[Telegram](https://telegram.me/reboot13_dev) || [Instagram](https://instagram.com/reboot13_dev) || [Twitter](https://twitter.com/reboot13_dev) || [Youtube](https://youtube.com/krutikraut) || [LinkedIN](https://linkedin.com/in/reboot13)
+[Telegram](https://telegram.me/reboot13_dev) || [Instagram](https://instagram.com/reboot13_dev) || [Twitter](https://twitter.com/reboot13_dev) || [Youtube](https://youtube.com/krutikraut) 
