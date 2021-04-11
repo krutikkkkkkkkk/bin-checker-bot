@@ -45,6 +45,7 @@ if(strpos($message, "!bin") === 0){
  $brand = $data['data']['vendor'];
  $level = $data['data']['level'];
  $type = $data['data']['type'];
+$flag = $data['data']['countryInfo']['emoji'];
  $result1 = $data['result'];
 
     if ($result1 == true) {
@@ -53,7 +54,7 @@ Bin: $bin
 Brand: $brand
 Level: $level
 Bank: $bank
-Country: $country
+Country: $country $flag
 Type:$type
 Checked By @$username ***");
     }
