@@ -12,7 +12,7 @@
     $start_msg = $_ENV['START_MSG']; 
 
 if($message == "/start"){
-    send_message($chat_id,$message_id, "***Hey $firstname \nUse !bin xxxxxx to Check BIN \n$start_msg***");
+    send_message($chat_id,$message_id, "***HOLA $firstname \nCOMANDO !bin xxxxxx PARA COMPROBAR BIN \n$start_msg***");
 }
 
 //Bin Lookup
@@ -49,14 +49,14 @@ $flag = $data['data']['countryInfo']['emoji'];
  $result1 = $data['result'];
 
     if ($result1 == true) {
-    send_message($chat_id,$message_id, "***✅ Valid BIN
-Bin: $bin
-Brand: $brand
-Level: $level
-Bank: $bank
-Country: $country $flag
-Type:$type
-Checked By @$username ***");
+    send_message($chat_id,$message_id, "***✅ GUS BINS
+BIN: $bin
+MARCA: $brand
+NIVEL: $level
+BANCO: $bank
+PAIS: $country $flag
+TIPO:$type
+REVISADO POR @$username ***");
     }
 else {
     send_message($chat_id,$message_id, "***Enter Valid BIN***");
