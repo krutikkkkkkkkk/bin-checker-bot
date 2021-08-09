@@ -56,7 +56,7 @@ Level: $level
 Bank: $bank
 Country: $country $flag
 Type:$type
-Checked By @$username ***");
+Checked By @lootwithmohan ***");
     }
 else {
     send_message($chat_id,$message_id, "***Enter Valid BIN***");
