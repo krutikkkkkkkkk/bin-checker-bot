@@ -20,7 +20,7 @@ if(strpos($message, "!bin") === 0){
     $bin = substr($message, 5);
     $curl = curl_init();
     curl_setopt_array($curl, [
-    CURLOPT_URL => "https://binssuapi.vercel.app/api/".$bin,
+    CURLOPT_URL => "https://worldbins-bins-api.vercel.app/api/".$bin,
     CURLOPT_RETURNTRANSFER => true,
     CURLOPT_FOLLOWLOCATION => true,
     CURLOPT_ENCODING => "",
@@ -40,12 +40,11 @@ if(strpos($message, "!bin") === 0){
  $result = curl_exec($curl);
  curl_close($curl);
  $data = json_decode($result, true);
- $bank = $data['data']['bank'];
- $country = $data['data']['country'];
- $brand = $data['data']['vendor'];
- $level = $data['data']['level'];
- $type = $data['data']['type'];
-$flag = $data['data']['countryInfo']['emoji'];
+ $bank = $data['bank'];
+ $country = $data['country'];
+ $brand = $data['brand'];
+ $level = $data['level'];
+ $type = $data['type'];
  $result1 = $data['result'];
 
     if ($result1 == true) {
